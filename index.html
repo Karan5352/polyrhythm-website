@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
+  <title>Polyrhythm Metronome</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="appHeader">
+    <img id="appPic" src="profile.png" alt="App Profile">
+    <h1 id="appName">Polyrhythm Metronome</h1>
+  </div>
+  <div id="controls">
+    <label>Tempo (BPM): <input type="number" id="bpmInput" min="10" max="300" value="40"></label>
+    <button id="addRhythm">Add Rhythm</button>
+    <div id="rhythmsContainer"></div>
+    <button id="startStop">Start</button>
+  </div>
+  <canvas id="canvas"></canvas>
+  <script src="renderer.js"></script>
+</body>
+</html>
