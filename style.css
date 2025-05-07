@@ -1,0 +1,62 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+#appHeader {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  z-index: 11;
+}
+#appPic {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-right: 10px;
+  box-shadow: 0 0 10px #fff;
+}
+#appName {
+  font-size: 1.5em;
+  text-shadow: 0 0 10px #fff;
+  margin: 0;
+}
+#controls {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 10;
+}
+#controls input, .beatInput {
+  width: 60px;
+  padding: 4px;
+  border: 1px solid #39ff14;
+  border-radius: 4px;
+  background: #111;
+  color: #fff;
+  box-shadow: 0 0 8px #39ff14;
+}
+#controls button, .removeRhythm {
+  margin-left: 5px;
+  padding: 4px 8px;
+  border: none;
+  background: #222;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 8px #39ff14;
+  cursor: pointer;
+}
+#controls button:hover, .removeRhythm:hover {
+  box-shadow: 0 0 15px #39ff14;
+}
+#rhythmsContainer > div { margin-top: 5px; }
+canvas { display: block; width: 100vw; height: 100vh; background: #000; }
